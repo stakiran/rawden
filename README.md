@@ -1,7 +1,7 @@
 # rawden
 ありのまま書けばいい。じぶんのねぐらなんだから。 
 
-## [Website](GITHUB-PAGES-URL)
+## [Website](https://stakiran.github.io/rawden/)
 
 ## Github
 - [日本語](index.md)
