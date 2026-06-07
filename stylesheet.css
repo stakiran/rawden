@@ -1,0 +1,115 @@
+/* -------
+   縦書き
+   from: https://s1500m.blogspot.com/2017/06/markdown-mobi-kindle-direct-publishing.html
+   ------- */
+
+/*
+body {
+  -epub-writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  direction: ltr;
+}
+*/
+
+/* -------
+   Borders
+   ------- */
+
+/* 見出しを枠線で強調 */
+h1 {
+  background-color: #eeeeee;
+  border: 1px ridge #000000;
+  padding-left: 4px;
+}
+
+h2 {
+  border-left: 6px solid #000000;
+  padding-left: 4px;
+}
+
+h3 {
+  border-bottom: 1px dotted #000000;
+}
+
+/* テーブルは MkDocs material theme のが良さそうだったので */
+table {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+  border-radius: .1rem;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table tr {
+  -webkit-transition: background-color .125s;
+  transition: background-color .125s;
+}
+table th {
+  min-width: 5rem;
+  padding: .6rem .8rem;
+  background-color: rgba(0,0,0,.54);
+  color: #fff;
+  vertical-align: top;
+}
+
+/* ----
+   Emphasis
+   ---- */
+
+/* ショートカットキーもせっかくだから強調したい */
+
+kbd {
+  padding: 3px 5px;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -2px 0 #d1d5da;
+}
+
+/* ----
+   Adjustment
+   ---- */
+
+/* 画像は中央寄せ + figcaption も中央寄せ.
+   構造がこう
+      figure
+        img
+        figcaption
+     /figure
+   なので figure に対して実施 */
+
+figure {
+  text-align: center;
+}
+
+figcaption:before {
+  content: "図.";
+}
+
+/*
+
+  code: literal と code block の両方が持つ
+  pre : code block が code の外側で持つ
+
+*/
+
+/* note が見やすかったので取り入れてみる */
+p > code, li > code {
+  color: #ffffff;
+  background: #282c34;
+  padding: 2px;
+}
+pre {
+  color: #ffffff;
+  background: #282c34;
+  padding: 16px;
+}
+
+/* 改行位置がほんの少しずれるのを回避する */
+p {
+  text-align: justify;
+}
+
+/* 段落ごとに自動でスペースを付与 */
+p {
+  text-indent: 1em;
+}
+

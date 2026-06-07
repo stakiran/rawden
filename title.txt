@@ -1,0 +1,8 @@
+---
+title: rawden
+author: 吉良野すた
+publisher: 吉良野すた
+rights: © 2026 吉良野すた
+date: 2026-06-08
+language: ja-JP
+---
